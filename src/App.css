@@ -238,6 +238,9 @@ button:focus-visible {
 .read-the-docs {
   color: #888;
 }
+.content {
+  color: white;
+}
 
 .carousel-container {
   display: flex;

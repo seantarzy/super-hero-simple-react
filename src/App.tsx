@@ -77,6 +77,7 @@ function App() {
 
   return (
     <div className="content">
+      <h1>Super Heroes</h1>
       <div className="carousel-container">
         <button onClick={handlePrev} className="arrow">
           {"Previous"}
