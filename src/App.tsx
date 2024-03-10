@@ -6,6 +6,7 @@ const superHeroData = [
   {
     name: "Spiderman",
     img: "./spidy.png",
+    class: "spidy",
     description:
       "Peter Parker is a high school student who gained spider-like abilities after being bitten by a radioactive spider. He first appeared in Amazing Fantasy #15 in 1962.",
     wikiLink: "https://en.wikipedia.org/wiki/Spider-Man",
@@ -13,6 +14,7 @@ const superHeroData = [
   {
     name: "Captain Marvel",
     img: "./captain-marvel.png",
+    class: "captain-marvel",
     description:
       "Captain Marvel is the alter ego of Carol Danvers, a former U.S. Air Force pilot who gained superhuman strength, speed, and the ability to fly after being exposed to alien technology. She first appeared in Marvel Super-Heroes #13 in 1968.",
     wikiLink: "https://en.wikipedia.org/wiki/Captain_Marvel_(Marvel_Comics)",
@@ -20,6 +22,7 @@ const superHeroData = [
   {
     name: "Green Lantern",
     img: "./green-lantern.png",
+    class: "green-lantern",
     description:
       "Green Lantern is the alter ego of Hal Jordan, a test pilot who was chosen to join the Green Lantern Corps, an intergalactic police force. He first appeared in Showcase #22 in 1959.",
     wikiLink: "https://en.wikipedia.org/wiki/Green_Lantern",
@@ -27,6 +30,7 @@ const superHeroData = [
   {
     name: "Superman",
     img: "./superman.png",
+    class: "superman",
     description:
       "Superman is the alter ego of Clark Kent, a journalist for the Daily Planet. He has superhuman strength, speed, and the ability to fly. He first appeared in Action Comics #1 in 1938.",
     wikiLink: "https://en.wikipedia.org/wiki/Superman",
@@ -34,6 +38,7 @@ const superHeroData = [
   {
     name: "Batman",
     img: "./batman.png",
+    class: "batman",
     description:
       "Batman is the alter ego of Bruce Wayne, a wealthy industrialist and philanthropist. He has no superhuman abilities, but is a highly skilled detective and martial artist. He first appeared in Detective Comics #27 in 1939.",
     wikiLink: "https://en.wikipedia.org/wiki/Batman",
@@ -41,6 +46,7 @@ const superHeroData = [
   {
     name: "Black Panther",
     img: "./black-panther.png",
+    class: "black-panther",
     description:
       "Black Panther is the alter ego of T'Challa, the king of the fictional African nation of Wakanda. He has superhuman strength, speed, and agility, and is a skilled martial artist. He first appeared in Fantastic Four #52 in 1966.",
     wikiLink: "https://en.wikipedia.org/wiki/Black_Panther_(comics)",
@@ -48,6 +54,7 @@ const superHeroData = [
   {
     name: "Thor",
     img: "./thor.png",
+    class: "thor",
     description:
       "Thor is the Norse god of thunder, who is based on the deity of the same name from Norse mythology. He has superhuman strength, speed, and the ability to control lightning. He first appeared in Journey into Mystery #83 in 1962.",
     wikiLink: "https://en.wikipedia.org/wiki/Thor_(Marvel_Comics)",
@@ -69,29 +76,39 @@ function App() {
   };
 
   return (
-    <div className="carousel-container">
-      <button onClick={handlePrev}>Previous</button>
-      <div className="carousel-content">
-        <div className="card">
-          <div className="content">
-            <h2>{superHeroData[currentCarouselIdx].name}</h2>
-            <p>{superHeroData[currentCarouselIdx].description}</p>
-            <a
-              href={superHeroData[currentCarouselIdx].wikiLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="read-more"
-            >
-              read more
-            </a>
+    <div className="content">
+      <div className="carousel-container">
+        <button onClick={handlePrev} className="arrow">
+          {"Previous"}
+          <i className="fas fa-arrow-left"></i>
+        </button>
+        <div className="carousel-content">
+          <div
+            className={`carousel-slide card ${superHeroData[currentCarouselIdx].class}`}
+          >
+            <div className="content">
+              <h2>{superHeroData[currentCarouselIdx].name}</h2>
+              <p>{superHeroData[currentCarouselIdx].description}</p>
+              <a
+                href={superHeroData[currentCarouselIdx].wikiLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="read-more"
+              >
+                read more
+              </a>
+            </div>
+            <img
+              src={superHeroData[currentCarouselIdx].img}
+              alt={superHeroData[currentCarouselIdx].name}
+            />
           </div>
-          <img
-            src={superHeroData[currentCarouselIdx].img}
-            alt={superHeroData[currentCarouselIdx].name}
-          />
         </div>
+        <button onClick={handleNext} className="arrow">
+          <i className="fas fa-arrow-right"></i>
+          {"Next"}
+        </button>
       </div>
-      <button onClick={handleNext}>Next</button>
     </div>
   );
 }

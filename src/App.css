@@ -238,3 +238,27 @@ button:focus-visible {
 .read-the-docs {
   color: #888;
 }
+
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 180px;
+  z-index: 100;
+}
+
+.arrow {
+  background-color: black;
+  padding: 15px;
+  color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.carousel-content {
+  position: relative;
+  width: 600px;
+  overflow: visible;
+}
