@@ -260,6 +260,10 @@ button:focus-visible {
   border-radius: 20px;
 }
 
+.arrow {
+  margin-right: auto;
+}
+
 .carousel-content {
   position: relative;
   width: 600px;

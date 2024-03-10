@@ -103,7 +103,7 @@ function App() {
             />
           </div>
         </div>
-        <button onClick={handleNext} className="arrow">
+        <button onClick={handleNext} className="arrow arrow-right">
           <i className="fas fa-arrow-right"></i>
           {"Next"}
         </button>
