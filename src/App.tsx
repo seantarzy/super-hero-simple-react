@@ -4,7 +4,7 @@ const superHeroData = [
   {
     name: "Spiderman",
     img: "./spidy.png",
-    class: "spidy",
+    class: "spidey",
     description:
       "Peter Parker is a high school student who gained spider-like abilities after being bitten by a radioactive spider. He first appeared in Amazing Fantasy #15 in 1962.",
     wikiLink: "https://en.wikipedia.org/wiki/Spider-Man",
@@ -51,7 +51,7 @@ const superHeroData = [
   },
   {
     name: "Thor",
-    img: "./thor.png",
+    img: "./thor.webp",
     class: "thor",
     description:
       "Thor is the Norse god of thunder, who is based on the deity of the same name from Norse mythology. He has superhuman strength, speed, and the ability to control lightning. He first appeared in Journey into Mystery #83 in 1962.",
@@ -77,7 +77,7 @@ function App() {
     <div className="content">
       <h1>Super Heroes</h1>
       <div className="carousel-container">
-        <button onClick={handlePrev} className="arrow">
+        <button onClick={handlePrev} className="arrow arrow-previous">
           {"Previous"}
           <i className="fas fa-arrow-left"></i>
         </button>
@@ -85,7 +85,7 @@ function App() {
           <div
             className={`carousel-slide card ${superHeroData[currentCarouselIdx].class}`}
           >
-            <div className="content">
+            <div className="card-content">
               <h2>{superHeroData[currentCarouselIdx].name}</h2>
               <p>{superHeroData[currentCarouselIdx].description}</p>
               <a
@@ -103,7 +103,7 @@ function App() {
             />
           </div>
         </div>
-        <button onClick={handleNext} className="arrow arrow-right">
+        <button onClick={handleNext} className="arrow arrow-next">
           <i className="fas fa-arrow-right"></i>
           {"Next"}
         </button>
