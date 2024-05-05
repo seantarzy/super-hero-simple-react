@@ -1,7 +1,6 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   height: 100%;
 }
@@ -186,6 +185,12 @@ h1 {
   bottom: 20%;
 }
 
+.card:hover img {
+  height: 400px;
+  width: 300px;
+  left: 90%;
+}
+
 .green-lantern:hover img,
 .spidey:hover img {
   height: 400px;
@@ -350,9 +355,10 @@ button:active {
     justify-content: center;
   }
 
-  .card .card-content p {
+  .card .card-content > p {
     font-size: smaller;
   }
+
   .captain-marvel .card-content p {
     min-height: 300px;
   }
@@ -372,4 +378,32 @@ button:active {
   .card {
     width: 250px;
   }
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+  background-color: #242424;
+  position: sticky;
+  width: 100%;
+}
+
+.nav-item{
+  cursor: pointer;
+  color: white;
+  border-radius: 30%;
+  padding: 1px;
+}
+
+.nav-item:hover {
+  color: #646cff;
+  background-color: white;
+}
+
+.nav-item img {
+  height: 2em;
+  width: 2em;
+  margin: 0 1em;
 }
