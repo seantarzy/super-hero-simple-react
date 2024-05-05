@@ -359,6 +359,10 @@ button:active {
     font-size: smaller;
   }
 
+  .card{
+    font-size: smaller;
+  }
+
   .captain-marvel .card-content p {
     min-height: 300px;
   }

@@ -150,7 +150,7 @@ function App() {
           >
             <div className="card-content">
               <h2>{superHeroData[currentCarouselIdx].name}</h2>
-              <p>
+              <p style={{ fontSize: ".8rem" }}>
                 {
                   // truncate description
                   superHeroData[currentCarouselIdx].description.length >
