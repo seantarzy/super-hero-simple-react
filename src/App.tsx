@@ -97,6 +97,21 @@ const superHeroData = [
     description:
       "Aquaman is the alter ego of Arthur Curry, the king of Atlantis who possesses superhuman strength, speed, and the ability to communicate with marine life. He protects the oceans and is a founding member of the Justice League. He first appeared in More Fun Comics #73 in 1941.",
     wikiLink: "https://en.wikipedia.org/wiki/Aquaman"
+  },
+  {
+    name: "Black Widow",
+    img: "./black-widow.png",
+    class: "black-widow",
+    description:
+      "Black Widow is the alter ego of Natasha Romanoff, a former Russian spy who became a member of S.H.I.E.L.D. and the Avengers. She is a highly skilled martial artist and marksman. She first appeared in Tales of Suspense #52 in 1964.",
+    wikiLink: "https://en.wikipedia.org/wiki/Black_Widow_(Natasha_Romanova)"
+  },
+  {
+    name: "Captain America",
+    img: "./captain-america.png",
+    class: "captain-america",
+    description:
+      "Captain America is the alter ego of Steve Rogers, a frail young man who was transformed into a super-soldier during World War II. He wields a vibranium shield and is a symbol of freedom and justice. He first appeared in Captain America Comics #1 in 1941."
   }
 ];
 
