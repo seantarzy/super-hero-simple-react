@@ -111,7 +111,8 @@ const superHeroData = [
     img: "./captain-america.png",
     class: "captain-america",
     description:
-      "Captain America is the alter ego of Steve Rogers, a frail young man who was transformed into a super-soldier during World War II. He wields a vibranium shield and is a symbol of freedom and justice. He first appeared in Captain America Comics #1 in 1941."
+      "Captain America is the alter ego of Steve Rogers, a frail young man who was transformed into a super-soldier during World War II. He wields a vibranium shield and is a symbol of freedom and justice. He first appeared in Captain America Comics #1 in 1941.",
+    wikiLink: "https://en.wikipedia.org/wiki/Captain_America"
   }
 ];
 
